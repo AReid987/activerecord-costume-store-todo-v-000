@@ -2,10 +2,13 @@ class CreateCostumes ActiveRecord::Migration
 
   def change
     create_table :costumes do |t|
-      t.string :name 
+      t.string :name
+      t.price :float
+      t.url :string
+      t.size :string 
     end
   end
-  
+
 end
 # Create a class and inherit from ActiveRecord::Migration
 
